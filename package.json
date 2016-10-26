@@ -1,0 +1,22 @@
+{
+  "name": "css-shapes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xrr2016/css-shapes.git"
+  },
+  "author": "xrr2016",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xrr2016/css-shapes/issues"
+  },
+  "homepage": "https://github.com/xrr2016/css-shapes#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.5"
+  }
+}

@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #7E898F 0%, #636C75 100%), radial-gradient(at top, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.55) 100%), radial-gradient(at top, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.08) 63%);
+    background-blend-mode: multiply, screen;
+}
+h4{
+  font-weight: normal;
+  margin:4px 0 4px 0;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content:flex-start;
+}
+.box{
+  width: 140px;
+  height: 140px;
+  margin: 12px;
+  text-align: center;
+  opacity: 0;
+  animation: show .5s ;
+}
+
+.item{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+@keyframes show {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
