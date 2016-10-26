@@ -22,7 +22,7 @@ h4{
   margin: 12px;
   text-align: center;
   opacity: 0;
-  animation: show .5s ;
+  transition: all 1s ease;
 }
 
 .item{
@@ -30,12 +30,4 @@ h4{
   height: 100px;
   margin: 0 auto;
   background-color: lightgray;
-}
-@keyframes show {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
 }
