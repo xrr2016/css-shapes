@@ -485,7 +485,12 @@
   border-right: 55px solid transparent;
 }
 
-
+.Moon{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #e78d45;
+}
 
 .Cone{
   width: 0;
