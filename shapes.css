@@ -1,0 +1,370 @@
+.Square{
+  background-color: #f7d196;
+}
+.Rectangle{
+  width: 140px;
+  background-color: #47543a;
+}
+.Circle{
+  border-radius: 50%;
+  background-color: #57b810;
+}
+.Oval{
+  width: 140px;
+  background-color: #4e42c8;
+}
+.Triangle-Up{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right:50px solid transparent;
+  border-bottom: 100px solid #97899d;
+}
+.Triangle-Down{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #a499cf;
+}
+.Triangle-Left{
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right : 100px solid #2aed8c;
+}
+
+.Triangle-Right{
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-left: 100px solid #fbe579;
+}
+.Triangle-Top-Left{
+  width: 0;
+  height: 0;
+  border-top: 100px solid #c6b4f4;
+  border-right: 100px solid transparent;
+}
+.Triangle-Top-Right{
+  width: 0;
+  height: 0;
+  border-top: 100px solid #b907b9;
+  border-left: 100px solid transparent;
+}
+.Triangle-Bottom-Left{
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #38587a;
+  border-right: 100px solid transparent;
+}
+.Triangle-Bottom-Right{
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #ad031e;
+  border-left: 100px solid transparent;
+}
+.Curved-Tail-Arrow{
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-right: 9px solid #9f5649;
+  transform: rotate(10deg);
+}
+.Curved-Tail-Arrow:after{
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 3px solid #9f5649;
+  border-radius: 20px 0 0 0;
+  top: -12px;
+  left: -9px;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+}
+.Trapezoid{
+  width: 60px;
+  height: 0;
+  border-bottom: 100px solid #eb7d72;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+.Parallelogram{
+  width: 150px;
+  height: 100px;
+  background-color: #675636;
+  transform: skew(20deg);
+}
+.Star6{
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #368b82;
+}
+.Star6:after{
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #368b82;
+}
+
+.Star5{
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid #2bd5e9;
+   border-left:   100px solid transparent;
+   -webkit-transform: rotate(35deg);
+   transform:      rotate(35deg);
+}
+.Star5:before {
+   border-bottom: 80px solid #2bd5e9;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   transform:      rotate(-35deg);
+}
+.Star5:after {
+   position: absolute;
+   display: block;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid #2bd5e9;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   transform:      rotate(-70deg);
+   content: '';
+}
+.Pentagon{
+  position: relative;
+  width: 54px;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: #80b08f transparent;
+}
+.Pentagon:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent #80b08f;
+}
+.Hexagon{
+  position: relative;
+  height: 55px;
+  background-color: #88c106;
+}
+.Hexagon:after{
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid #88c106;
+}
+.Hexagon:before{
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid #88c106;
+}
+
+.Octagon {
+	position: relative;
+  background-color: #c22797;
+}
+
+.Octagon:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 29px solid #c22797;
+	border-left: 29px solid transparent;
+	border-right: 29px solid transparent;
+	width: 42px;
+	height: 0;
+}
+
+.Octagon:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-top: 29px solid #c22797;
+	border-left: 29px solid transparent;
+	border-right: 29px solid transparent;
+	width: 42px;
+	height: 0;
+}
+.Heart{
+  position: relative;
+  height: 90px;
+}
+.Heart:before,.Heart:after{
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #33be03;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.Heart:after{
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.Infinity{
+  position: relative;
+  width: 106px;
+}
+.Infinity:before,.Infinity:after{
+  position: absolute;
+  content: "";
+  top:0;
+  left:0;
+  width: 30px;
+  height: 30px;
+  border: 10px solid #17086b;
+  border-radius: 25px 25px 0 25px;
+  transform: rotate(-45deg);
+}
+.Infinity:after{
+  left: auto;
+  right: 0;
+  border-radius: 25px 25px 25px 0;
+  transform: rotate(45deg);
+}
+.Diamond-Square{
+  position: relative;
+  top: -50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #2d48fc;
+}
+.Diamond-Square:after{
+  position: absolute;
+  content: "";
+  left: -50px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: #2d48fc;
+}
+.Diamond-Shield{
+  position: relative;
+  top: -50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 20px solid #4a9081;
+}
+.Diamond-Shield:after{
+  position: absolute;
+  content: "";
+  left: -50px;
+  top:20px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top:70px solid #4a9091;
+}
+.Diamond-Narrow{
+  position: relative;
+  top: -50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 70px solid #e4bfa5;
+}
+.Diamond-Narrow:after{
+  position: absolute;
+  content: "";
+  left: -50px;
+  top: 70px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 70px solid #e4bfa5;
+}
+.Cut-Diamond{
+  position: relative;
+  margin: 20px 0 50px 0;
+  border-color: transparent transparent #8cbf84 transparent;
+  border-style: solid;
+  border-width: 0 25px 25px 25px;
+  height: 0;
+  width: 50px;
+}
+.Cut-Diamond:after{
+  position: absolute;;
+  content: "";
+  top: 25px;
+  left: -25px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #8cbf84 transparent transparent transparent;
+  border-width: 70px 50px 0 50px;
+}
+.Egg{
+  width: 100px;
+  height: 120px;
+  display: block;
+  background-color: #b90663;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+.Pac-Man{
+  width: 0;
+  height: 0;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #5e1937;
+  border-left: 60px solid #5e1937;
+  border-bottom: 60px solid #5e1937;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
