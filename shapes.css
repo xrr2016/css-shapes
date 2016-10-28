@@ -456,3 +456,33 @@
   height: 12px;
   background-color: #000;
 }
+.Badge-Ribbon{
+
+}
+.Cone{
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 100px solid #ddd879;
+  border-radius: 50%;
+}
+.Base{
+  position: relative;
+  display: inline-block;
+  height: 55px;
+  background-color: #48fe04;
+  margin-left: 20px;
+  margin-top: 55px;
+}
+.Base:before{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: -35px;
+  left: 0;
+  border-bottom: 35px solid #48fe04;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
