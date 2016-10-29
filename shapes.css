@@ -1,538 +1,763 @@
-.Square{
-  background-color: #f7d196;
-}
-.Rectangle{
-  width: 140px;
-  background-color: #47543a;
-}
-.Circle{
-  border-radius: 50%;
-  background-color: #57b810;
-}
-.Oval{
-  width: 140px;
-  background-color: #4e42c8;
-}
-.Triangle-Up{
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right:50px solid transparent;
-  border-bottom: 100px solid #97899d;
-}
-.Triangle-Down{
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 100px solid #a499cf;
-}
-.Triangle-Left{
-  width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-right : 100px solid #2aed8c;
+.Square {
+    background-color: #f7d196;
 }
 
-.Triangle-Right{
-  width: 0;
-  height: 0;
-  border-bottom: 50px solid transparent;
-  border-top: 50px solid transparent;
-  border-left: 100px solid #fbe579;
-}
-.Triangle-Top-Left{
-  width: 0;
-  height: 0;
-  border-top: 100px solid #c6b4f4;
-  border-right: 100px solid transparent;
-}
-.Triangle-Top-Right{
-  width: 0;
-  height: 0;
-  border-top: 100px solid #b907b9;
-  border-left: 100px solid transparent;
-}
-.Triangle-Bottom-Left{
-  width: 0;
-  height: 0;
-  border-bottom: 100px solid #38587a;
-  border-right: 100px solid transparent;
-}
-.Triangle-Bottom-Right{
-  width: 0;
-  height: 0;
-  border-bottom: 100px solid #ad031e;
-  border-left: 100px solid transparent;
-}
-.Curved-Tail-Arrow{
-  position: relative;
-  width: 0;
-  height: 0;
-  border-top: 9px solid transparent;
-  border-right: 9px solid #9f5649;
-  transform: rotate(10deg);
-}
-.Curved-Tail-Arrow:after{
-  content: "";
-  position: absolute;
-  border: 0 solid transparent;
-  border-top: 3px solid #9f5649;
-  border-radius: 20px 0 0 0;
-  top: -12px;
-  left: -9px;
-  width: 12px;
-  height: 12px;
-  transform: rotate(45deg);
-}
-.Trapezoid{
-  width: 60px;
-  height: 0;
-  border-bottom: 100px solid #eb7d72;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-}
-.Parallelogram{
-  width: 150px;
-  height: 100px;
-  background-color: #675636;
-  transform: skew(20deg);
-}
-.Star6{
-  position: relative;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid #368b82;
-}
-.Star6:after{
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: -50px;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 100px solid #368b82;
+.Rectangle {
+    width: 140px;
+    background-color: #47543a;
 }
 
-.Star5{
-   margin: 50px 0;
-   position: relative;
-   display: block;
-   width: 0px;
-   height: 0px;
-   border-right:  100px solid transparent;
-   border-bottom: 70px  solid #2bd5e9;
-   border-left:   100px solid transparent;
-   -webkit-transform: rotate(35deg);
-   transform:      rotate(35deg);
+.Circle {
+    border-radius: 50%;
+    background-color: #57b810;
 }
+
+.Oval {
+    width: 140px;
+    background-color: #4e42c8;
+}
+
+.Triangle-Up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #97899d;
+}
+
+.Triangle-Down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #a499cf;
+}
+
+.Triangle-Left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 100px solid #2aed8c;
+}
+
+.Triangle-Right {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid transparent;
+    border-left: 100px solid #fbe579;
+}
+
+.Triangle-Top-Left {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #c6b4f4;
+    border-right: 100px solid transparent;
+}
+
+.Triangle-Top-Right {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #b907b9;
+    border-left: 100px solid transparent;
+}
+
+.Triangle-Bottom-Left {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #38587a;
+    border-right: 100px solid transparent;
+}
+
+.Triangle-Bottom-Right {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #ad031e;
+    border-left: 100px solid transparent;
+}
+
+.Curved-Tail-Arrow {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-right: 9px solid #9f5649;
+    transform: rotate(10deg);
+}
+
+.Curved-Tail-Arrow:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 3px solid #9f5649;
+    border-radius: 20px 0 0 0;
+    top: -12px;
+    left: -9px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+}
+
+.Trapezoid {
+    width: 60px;
+    height: 0;
+    border-bottom: 100px solid #eb7d72;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.Parallelogram {
+    width: 150px;
+    height: 100px;
+    background-color: #675636;
+    transform: skew(20deg);
+}
+
+.Star6 {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #368b82;
+}
+
+.Star6:after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -50px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #368b82;
+}
+
+.Star5 {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #2bd5e9;
+    border-left: 100px solid transparent;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
 .Star5:before {
-   border-bottom: 80px solid #2bd5e9;
-   border-left: 30px solid transparent;
-   border-right: 30px solid transparent;
-   position: absolute;
-   height: 0;
-   width: 0;
-   top: -45px;
-   left: -65px;
-   display: block;
-   content: '';
-   -webkit-transform: rotate(-35deg);
-   transform:      rotate(-35deg);
+    border-bottom: 80px solid #2bd5e9;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
 }
+
 .Star5:after {
-   position: absolute;
-   display: block;
-   top: 3px;
-   left: -105px;
-   width: 0px;
-   height: 0px;
-   border-right: 100px solid transparent;
-   border-bottom: 70px solid #2bd5e9;
-   border-left: 100px solid transparent;
-   -webkit-transform: rotate(-70deg);
-   transform:      rotate(-70deg);
-   content: '';
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #2bd5e9;
+    border-left: 100px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    transform: rotate(-70deg);
+    content: '';
 }
-.Pentagon{
-  position: relative;
-  width: 54px;
-  border-width: 50px 18px 0;
-  border-style: solid;
-  border-color: #80b08f transparent;
+
+.Pentagon {
+    position: relative;
+    width: 54px;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #80b08f transparent;
 }
-.Pentagon:before{
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: -85px;
-  left: -18px;
-  border-width: 0 45px 35px;
-  border-style: solid;
-  border-color: transparent transparent #80b08f;
+
+.Pentagon:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #80b08f;
 }
-.Hexagon{
-  position: relative;
-  height: 55px;
-  background-color: #88c106;
+
+.Hexagon {
+    position: relative;
+    height: 55px;
+    background-color: #88c106;
 }
-.Hexagon:after{
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid #88c106;
+
+.Hexagon:after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid #88c106;
 }
-.Hexagon:before{
-  content: "";
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 25px solid #88c106;
+
+.Hexagon:before {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #88c106;
 }
 
 .Octagon {
-	position: relative;
-  background-color: #c22797;
+    position: relative;
+    background-color: #c22797;
 }
 
 .Octagon:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-bottom: 29px solid #c22797;
-	border-left: 29px solid transparent;
-	border-right: 29px solid transparent;
-	width: 42px;
-	height: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 29px solid #c22797;
+    border-left: 29px solid transparent;
+    border-right: 29px solid transparent;
+    width: 42px;
+    height: 0;
 }
 
 .Octagon:after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	border-top: 29px solid #c22797;
-	border-left: 29px solid transparent;
-	border-right: 29px solid transparent;
-	width: 42px;
-	height: 0;
-}
-.Heart{
-  position: relative;
-  height: 90px;
-}
-.Heart:before,.Heart:after{
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  background: #33be03;
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-.Heart:after{
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
-}
-.Infinity{
-  position: relative;
-  width: 106px;
-}
-.Infinity:before,.Infinity:after{
-  position: absolute;
-  content: "";
-  top:0;
-  left:0;
-  width: 30px;
-  height: 30px;
-  border: 10px solid #17086b;
-  border-radius: 25px 25px 0 25px;
-  transform: rotate(-45deg);
-}
-.Infinity:after{
-  left: auto;
-  right: 0;
-  border-radius: 25px 25px 25px 0;
-  transform: rotate(45deg);
-}
-.Diamond-Square{
-  position: relative;
-  top: -50px;
-  width: 0;
-  height: 0;
-  border: 50px solid transparent;
-  border-bottom-color: #2d48fc;
-}
-.Diamond-Square:after{
-  position: absolute;
-  content: "";
-  left: -50px;
-  top: 50px;
-  width: 0;
-  height: 0;
-  border: 50px solid transparent;
-  border-top-color: #2d48fc;
-}
-.Diamond-Shield{
-  position: relative;
-  top: -50px;
-  width: 0;
-  height: 0;
-  border: 50px solid transparent;
-  border-bottom: 20px solid #4a9081;
-}
-.Diamond-Shield:after{
-  position: absolute;
-  content: "";
-  left: -50px;
-  top:20px;
-  width: 0;
-  height: 0;
-  border: 50px solid transparent;
-  border-top:70px solid #4a9091;
-}
-.Diamond-Narrow{
-  position: relative;
-  top: -50px;
-  width: 0;
-  height: 0;
-  border: 50px solid transparent;
-  border-bottom: 70px solid #e4bfa5;
-}
-.Diamond-Narrow:after{
-  position: absolute;
-  content: "";
-  left: -50px;
-  top: 70px;
-  width: 0;
-  height: 0;
-  border: 50px solid transparent;
-  border-top: 70px solid #e4bfa5;
-}
-.Cut-Diamond{
-  position: relative;
-  margin: 20px 0 50px 0;
-  border-color: transparent transparent #8cbf84 transparent;
-  border-style: solid;
-  border-width: 0 25px 25px 25px;
-  height: 0;
-  width: 50px;
-}
-.Cut-Diamond:after{
-  position: absolute;;
-  content: "";
-  top: 25px;
-  left: -25px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-color: #8cbf84 transparent transparent transparent;
-  border-width: 70px 50px 0 50px;
-}
-.Egg{
-  width: 100px;
-  height: 120px;
-  display: block;
-  background-color: #b90663;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-}
-.Pac-Man{
-  width: 0;
-  height: 0;
-  border-right: 60px solid transparent;
-  border-top: 60px solid #5e1937;
-  border-left: 60px solid #5e1937;
-  border-bottom: 60px solid #5e1937;
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-}
-.Talk-Bubble{
-  position: relative;
-  width: 120px;
-  height: 80px;
-  background-color: #0fd680;
-  border-radius: 10px;
-}
-.Talk-Bubble:before{
-  position: absolute;
-  content: "";
-  right: 100%;
-  top: 26px;
-  width: 0;
-  height: 0;
-  border-top: 13px solid transparent;
-  border-right: 26px solid #0fd680;
-  border-bottom: 13px solid transparent;
-}
-.Point-Burst12{
-  position: relative;
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  background-color: #881756;
-}
-.Point-Burst12:before,.Point-Burst12:after{
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  height: 80px;
-  width: 80px;
-  background-color: #881756;
-}
-.Point-Burst12:before{
-  transform: rotate(30deg);
-}
-.Point-Burst12:after{
-  transform: rotate(60deg);
-}
-.Point-Burst8{
-  position: relative;
-  background-color: #e5fee3;
-  text-align: center;
-  transform: rotate(20deg);
-}
-.Point-Burst8:before{
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  height: 100px;
-  width: 100px;
-  background-color: #e5fee3;
-  transform: rotate(135deg);
-}
-.Yin-Yang{
-  position: relative;
-  border-color: #000;
-  border-style: solid;
-  border-width: 2px 2px 50px 2px;
-  border-radius: 100%;
-  width: 96px;
-  height: 48px;
-  background-color: #eee;
-}
-.Yin-Yang:before{
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 0;
-  border: 18px solid  #000;
-  border-radius: 100%;
-  width: 12px;
-  height: 12px;
-  background-color: #eee;
-}
-.Yin-Yang:after{
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  border: 18px solid #eee;
-  border-radius: 100%;
-  width: 12px;
-  height: 12px;
-  background-color: #000;
-}
-.Badge-Ribbon{
-
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 29px solid #c22797;
+    border-left: 29px solid transparent;
+    border-right: 29px solid transparent;
+    width: 42px;
+    height: 0;
 }
 
+.Heart {
+    position: relative;
+    height: 90px;
+}
+
+.Heart:before,
+.Heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #33be03;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.Heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.Infinity {
+    position: relative;
+    width: 106px;
+}
+
+.Infinity:before,
+.Infinity:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 10px solid #17086b;
+    border-radius: 25px 25px 0 25px;
+    transform: rotate(-45deg);
+}
+
+.Infinity:after {
+    left: auto;
+    right: 0;
+    border-radius: 25px 25px 25px 0;
+    transform: rotate(45deg);
+}
+
+.Diamond-Square {
+    position: relative;
+    top: -50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: #2d48fc;
+}
+
+.Diamond-Square:after {
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: #2d48fc;
+}
+
+.Diamond-Shield {
+    position: relative;
+    top: -50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 20px solid #4a9081;
+}
+
+.Diamond-Shield:after {
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid #4a9091;
+}
+
+.Diamond-Narrow {
+    position: relative;
+    top: -50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 70px solid #e4bfa5;
+}
+
+.Diamond-Narrow:after {
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid #e4bfa5;
+}
+
+.Cut-Diamond {
+    position: relative;
+    margin: 20px 0 50px 0;
+    border-color: transparent transparent #8cbf84 transparent;
+    border-style: solid;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+}
+
+.Cut-Diamond:after {
+    position: absolute;
+    ;
+    content: "";
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #8cbf84 transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
+}
+
+.Egg {
+    width: 100px;
+    height: 120px;
+    display: block;
+    background-color: #b90663;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.Pac-Man {
+    width: 0;
+    height: 0;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #5e1937;
+    border-left: 60px solid #5e1937;
+    border-bottom: 60px solid #5e1937;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.Talk-Bubble {
+    position: relative;
+    width: 120px;
+    height: 80px;
+    background-color: #0fd680;
+    border-radius: 10px;
+}
+
+.Talk-Bubble:before {
+    position: absolute;
+    content: "";
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #0fd680;
+    border-bottom: 13px solid transparent;
+}
+
+.Point-Burst12 {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background-color: #881756;
+}
+
+.Point-Burst12:before,
+.Point-Burst12:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background-color: #881756;
+}
+
+.Point-Burst12:before {
+    transform: rotate(30deg);
+}
+
+.Point-Burst12:after {
+    transform: rotate(60deg);
+}
+
+.Point-Burst8 {
+    position: relative;
+    background-color: #e5fee3;
+    text-align: center;
+    transform: rotate(20deg);
+}
+
+.Point-Burst8:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background-color: #e5fee3;
+    transform: rotate(135deg);
+}
+
+.Yin-Yang {
+    position: relative;
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px 2px 50px 2px;
+    border-radius: 100%;
+    width: 96px;
+    height: 48px;
+    background-color: #eee;
+}
+
+.Yin-Yang:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    border: 18px solid #000;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: #eee;
+}
+
+.Yin-Yang:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    border: 18px solid #eee;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+}
+
+.Badge-Ribbon {
+    position: relative;
+    background: red;
+    height: 100px;
+    width: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.Badge-Ribbon:before,
+.Badge-Ribbon:after {
+    content: '';
+    position: absolute;
+    border-bottom: 70px solid red;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    top: 70px;
+    left: -10px;
+    -webkit-transform: rotate(-140deg);
+    -moz-transform: rotate(-140deg);
+    -ms-transform: rotate(-140deg);
+    -o-transform: rotate(-140deg);
+}
+
+.Badge-Ribbon:after {
+    left: auto;
+    right: -10px;
+    -webkit-transform: rotate(140deg);
+    -moz-transform: rotate(140deg);
+    -ms-transform: rotate(140deg);
+    -o-transform: rotate(140deg);
+}
+
+.Space-Invader {
+    width: 1em;
+    height: 1em;
+    background-color: orange;
+    overflow: hidden;
+    margin: 50px 0 70px 65px;
+    box-shadow: 0 0 0 1em orange, 0 1em 0 1em orange, -2.5em 1.5em 0 .5em orange, 2.5em 1.5em 0 .5em orange, -3em -3em 0 0 orange, 3em -3em 0 0 orange, -2em -2em 0 0 orange, 2em -2em 0 0 orange, -3em -1em 0 0 orange, -2em -1em 0 0 orange, 2em -1em 0 0 orange, 3em -1em 0 0 orange, -4em 0 0 0 orange, -3em 0 0 0 orange, 3em 0 0 0 orange, 4em 0 0 0 orange, -5em 1em 0 0 orange, -4em 1em 0 0 orange, 4em 1em 0 0 orange, 5em 1em 0 0 orange, -5em 2em 0 0 orange, 5em 2em 0 0 orange, -5em 3em 0 0 orange, -3em 3em 0 0 orange, 3em 3em 0 0 orange, 5em 3em 0 0 orange, -2em 4em 0 0 orange, -1em 4em 0 0 orange, 1em 4em 0 0 orange, 2em 4em 0 0 orange;
+}
+
+.TV-Screen {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 20px 0;
+    background-color: #bde;
+    border-radius: 50%/16%;
+    color: #fff;
+    text-align: center;
+    text-indent: 1em;
+}
+
+.Tv-Screen {
+    position: absolute;
+    content: "";
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background-color: inherit;
+    border-radius: 5%/50%;
+}
+
+.Chevron {
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 6px;
+    height: 60px;
+    width: 200px;
+}
+
+.Chevron {
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 6px;
+    height: 60px;
+    width: 100px;
+}
+
+.Chevron:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 51%;
+    background: #fde;
+    -webkit-transform: skew(0deg, 6deg);
+    -moz-transform: skew(0deg, 6deg);
+    -ms-transform: skew(0deg, 6deg);
+    -o-transform: skew(0deg, 6deg);
+    transform: skew(0deg, 6deg);
+}
+
+.Chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #fde;
+    -webkit-transform: skew(0deg, -6deg);
+    -moz-transform: skew(0deg, -6deg);
+    -ms-transform: skew(0deg, -6deg);
+    -o-transform: skew(0deg, -6deg);
+    transform: skew(0deg, -6deg);
+}
+
+​.Magnifying-Glass{
+    position: relative;
+    display: inline-block;
+    font-size: 10em;
+    width: 0.4em;
+    height: 0.4em;
+    border: 0.1em solid blue;
+    border-radius: 0.35em;
+}
+
+.Magnifying-Glass:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    right: -0.25em;
+    bottom: -0.1em;
+    border-width: 0;
+    background-color: blue;
+    width: 0.35em;
+    height: 0.08em;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
 .Flag {
-  width: 110px;
-  height: 56px;
-  padding-top: 15px;
-  position: relative;
-  background: red;
-  color: white;
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  text-align: center;
-  text-transform: uppercase;
+    position: relative;
+    width: 110px;
+    height: 56px;
+    padding-top: 15px;
+    background: red;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
 }
+
 .Flag:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-bottom: 13px solid #eee;
-  border-left: 55px solid transparent;
-  border-right: 55px solid transparent;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 13px solid #eee;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
 }
 
-.Moon{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-shadow: 15px 15px 0 0 #e78d45;
+.Facebook-Icon {
+    position: relative;
+    background: blue;
+    text-indent: -999em;
+    width: 100px;
+    height: 110px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 15px solid blue;
+    border-bottom: 0;
 }
 
-.Cone{
-  width: 0;
-  height: 0;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-top: 100px solid #ddd879;
-  border-radius: 50%;
+.Facebook-Icon:before {
+    position: absolute;
+    content: "/20";
+    background: blue;
+    width: 40px;
+    height: 90px;
+    bottom: -30px;
+    right: -37px;
+    border: 20px solid #eee;
+    border-radius: 25px;
+}
+
+.Facebook-Icon:after {
+    content: "/20";
+    position: absolute;
+    width: 55px;
+    top: 50px;
+    height: 20px;
+    background: #eee;
+    right: 5px;
+}
+
+.Moon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 #e78d45;
+}
+
+.Cone {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 100px solid #ddd879;
+    border-radius: 50%;
 }
 
 .Cross {
-  position: relative;
-  background: #7deb44;
-  height: 100px;
-  width: 20px;
-}
-.Cross:after {
-  position: absolute;
-  content: "";
-  height: 20px;
-  left: -40px;
-  top: 40px;
-  width: 100px;
-  background: #7deb44;
+    position: relative;
+    background: #7deb44;
+    height: 100px;
+    width: 20px;
 }
 
-.Base{
-  position: relative;
-  display: inline-block;
-  height: 55px;
-  background-color: #48fe04;
-  margin-left: 20px;
-  margin-top: 55px;
+.Cross:after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    left: -40px;
+    top: 40px;
+    width: 100px;
+    background: #7deb44;
 }
-.Base:before{
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  top: -35px;
-  left: 0;
-  border-bottom: 35px solid #48fe04;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+
+.Base {
+    position: relative;
+    display: inline-block;
+    height: 55px;
+    background-color: #48fe04;
+    margin-left: 20px;
+    margin-top: 55px;
+}
+
+.Base:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: -35px;
+    left: 0;
+    border-bottom: 35px solid #48fe04;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
 }
